@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="modal-container">
+      <div class="modal">
+        <div class="header">
+          <h2>Header</h2>
+        </div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+            optio neque nobis debitis blanditiis asperiores et ex repellat est
+            sunt rem voluptatibus quaerat amet dolorem deleniti reiciendis,
+            dolore voluptatem vero beatae illum dolorum? Quaerat, laborum
+            labore. Et doloremque, expedita itaque nesciunt quia libero id vel
+            neque quibusdam veritatis aut nisi quisquam iure ad cumque
+            voluptatibus nemo similique incidunt hic harum?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero
+            optio neque nobis debitis blanditiis asperiores et ex repellat est
+            sunt rem voluptatibus quaerat amet dolorem deleniti reiciendis,
+            dolore voluptatem vero beatae illum dolorum? Quaerat, laborum
+            labore. Et doloremque, expedita itaque nesciunt quia libero id vel
+            neque quibusdam veritatis aut nisi quisquam iure ad cumque
+            voluptatibus nemo similique incidunt hic harum?
+          </p>
+        </div>
+        <div class="footer">
+            <h2>Footer</h2>
+        </div>
+        <div class="cross">X</div>
+      </div>
+    </div>
+    <button>Click to open Modal</button>
+    <script>
+      const button = document.querySelector("button");
+      const modalContainer = document.querySelector(".modal-container");
+      const cross = document.querySelector(".cross");
+
+      button.addEventListener("click", runOnClick);
+      cross.addEventListener("click", hideModal);
+      modalContainer.addEventListener("click", hideModal);
+      function runOnClick() {
+        modalContainer.classList.add("show");
+      }
+      function hideModal(e) {
+          if(e.target.classList[0] === "modal-container" || e.target.classList[0] === "cross"){
+            modalContainer.classList.remove("show");
+          }
+      }
+    </script>
+  </body>
+</html>

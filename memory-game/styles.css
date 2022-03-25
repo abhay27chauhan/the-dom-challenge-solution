@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  display: grid;
+  place-items: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cell {
+  background-color: gray;
+  border: 1px solid;
+  height: 50px;
+  width: 60px;
+  cursor: pointer;
+}
+
+button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.shake {
+  animation: shake 0.8s infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-8px);
+  }
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transform: translateX(8px);
+  }
+}

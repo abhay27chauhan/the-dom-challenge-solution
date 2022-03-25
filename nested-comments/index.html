@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nested comments</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">comments</h1>
+      <p class="alert hide" style="color: red;"></p>
+      <div class="input-container">
+        <input type="text" placeholder="enter author name" class="authorBox" />
+        <input type="text" placeholder="enter comment" class="commentBox" />
+        <button class="submit">Post</button>
+      </div>
+      <div class="comments">
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/short-unique-id@latest/dist/short-unique-id.min.js"></script>
+    <script>
+      // Instantiate
+      var uid = new ShortUniqueId();
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

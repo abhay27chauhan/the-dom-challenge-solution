@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.toast {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 100px);
+    bottom: 10px;
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 130px;
+    display: grid;
+    place-items: center;
+    border-radius: 4px;
+    transition: transform 1s;
+}
+
+.show {
+    transform: translate(-50%, 0px);
+}

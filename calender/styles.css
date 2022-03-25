@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+}
+
+.calender {
+    width: 352px;
+    border: 1px solid black;
+}
+
+.weekdays {
+    display: flex;
+}
+
+.weekday, .date {
+    border: 1px solid black;
+    height: 40px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+}
+
+.dates {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buttons {
+    display: flex;
+    width: 352px;
+    justify-content: space-between;
+    margin-top: 10px;
+    height: 25px;
+    align-items: center;
+}
+
+button {
+    cursor: pointer;
+}
